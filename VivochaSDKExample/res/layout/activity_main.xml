@@ -6,7 +6,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.vivocha.sdkexample.MainActivity" >
+    tools:context="com.vivocha.sdkexample.MainActivity"
+    android:background="#B2EBF2"
+     >
 
     <TextView
         android:id="@+id/textView1"

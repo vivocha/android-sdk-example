@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vvcLCornerTopLeft">0dp</dimen>
+    <dimen name="vvcLCornerTopRight">10dp</dimen>
+    <dimen name="vvcLCornerBottomLeft">10dp</dimen>
+    <dimen name="vvcLCornerBottomRight">0dp</dimen>
+    
+    <dimen name="vvcRCornerTopLeft">10dp</dimen>
+    <dimen name="vvcRCornerTopRight">0dp</dimen>
+    <dimen name="vvcRCornerBottomLeft">0dp</dimen>
+    <dimen name="vvcRCornerBottomRight">10dp</dimen>
+    
+</resources>

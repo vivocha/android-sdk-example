@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <com.vivocha.sdk.internal.view.VivochaRelativeLayout
+        android:id="@+id/side_tab_left_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp" >
+
+        <com.vivocha.sdk.othersource.VerticalTextView
+            android:id="@+id/sideTabTextView_lt"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background_left"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:paddingTop="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_lt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/sideTabTextView_lt"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_lt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/sideTabTextView_lt"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </com.vivocha.sdk.internal.view.VivochaRelativeLayout>
+
+    <com.vivocha.sdk.internal.view.VivochaRelativeLayout
+        android:id="@+id/side_tab_left_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <com.vivocha.sdk.othersource.VerticalTextView
+            android:id="@+id/sideTabTextView_lm"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background_left"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:paddingTop="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_lm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/sideTabTextView_lm"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_lm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/sideTabTextView_lm"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </com.vivocha.sdk.internal.view.VivochaRelativeLayout>
+
+    <com.vivocha.sdk.internal.view.VivochaRelativeLayout
+        android:id="@+id/side_tab_left_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="40dp" >
+
+        <com.vivocha.sdk.othersource.VerticalTextView
+            android:id="@+id/sideTabTextView_lb"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background_left"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:paddingTop="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_lb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/sideTabTextView_lb"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_lb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/sideTabTextView_lb"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </com.vivocha.sdk.internal.view.VivochaRelativeLayout>
+
+    <com.vivocha.sdk.internal.view.VivochaRelativeLayout
+        android:id="@+id/side_tab_right_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="40dp" >
+
+        <com.vivocha.sdk.othersource.VerticalTextView
+            android:id="@+id/sideTabTextView_rt"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background_right"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:paddingTop="15dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_rt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sideTabTextView_rt"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_rt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sideTabTextView_rt"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </com.vivocha.sdk.internal.view.VivochaRelativeLayout>
+
+    <com.vivocha.sdk.internal.view.VivochaRelativeLayout
+        android:id="@+id/side_tab_right_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <com.vivocha.sdk.othersource.VerticalTextView
+            android:id="@+id/sideTabTextView_rm"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background_right"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:paddingTop="15dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_rm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sideTabTextView_rm"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_rm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sideTabTextView_rm"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </com.vivocha.sdk.internal.view.VivochaRelativeLayout>
+
+    <com.vivocha.sdk.internal.view.VivochaRelativeLayout
+        android:id="@+id/side_tab_right_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="50dp" >
+
+        <com.vivocha.sdk.othersource.VerticalTextView
+            android:id="@+id/sideTabTextView_rb"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background_right"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:paddingTop="15dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_rb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sideTabTextView_rb"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_rb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/sideTabTextView_rb"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </com.vivocha.sdk.internal.view.VivochaRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_tab_down_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="40dp" >
+
+        <TextView
+            android:id="@+id/sideTabTextView_dt"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_dt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/sideTabTextView_dt"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_dt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/sideTabTextView_dt"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_tab_down_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/sideTabTextView_dm"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_dm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/sideTabTextView_dm"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_dm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/sideTabTextView_dm"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_tab_down_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="40dp" >
+
+        <TextView
+            android:id="@+id/sideTabTextView_db"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/side_tab_background"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_db"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/sideTabTextView_db"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_db"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toRightOf="@+id/sideTabTextView_db"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_tab_up_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="40dp" >
+
+        <TextView
+            android:id="@+id/sideTabTextView_ut"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/side_tab_background_upside_down"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_ut"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/sideTabTextView_ut"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_ut"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/sideTabTextView_ut"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_tab_up_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/sideTabTextView_um"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/side_tab_background_upside_down"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_um"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/sideTabTextView_um"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_um"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/sideTabTextView_um"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/side_tab_up_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="40dp" >
+
+        <TextView
+            android:id="@+id/sideTabTextView_ub"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/side_tab_background_upside_down"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/badgeView_ub"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/sideTabTextView_ub"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:text=""
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/badgeViewLoading_ub"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/sideTabTextView_ub"
+            android:background="@drawable/side_badge_background"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout> <!-- android:layout_centerHorizontal="true" -->
+<!-- android:layout_alignParentRight="true" -->

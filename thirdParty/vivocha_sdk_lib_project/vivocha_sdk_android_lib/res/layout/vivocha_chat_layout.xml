@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33AA22" >
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/vivocha_top_view_bkg"
+        android:minHeight="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonMinimize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:minWidth="70dp"
+            android:padding="5dp"
+           />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.84"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/titleImageView"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.84"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonTerminate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:layout_margin="5dp"
+            android:background="@android:color/transparent"
+            android:minWidth="70dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/topView"
+        android:background="#c2765a"
+        android:orientation="horizontal" 
+        android:visibility="visible"
+        android:animateLayoutChanges="true"
+        >
+
+        <ProgressBar
+            android:id="@+id/loadingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/vivocha_loading_progress"
+            android:indeterminateOnly="true" 
+            android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+            
+             />
+
+        <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </LinearLayout>
+
+    <com.vivocha.sdk.internal.VivochaListView
+        android:id="@+id/tableView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputBox"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loadingView"
+        android:background="@android:color/transparent"
+        android:fadingEdge="none"
+        android:scrollingCache="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/inputBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/vivocha_bottom_view_bkg"
+   	
+        android:minHeight="44dp" >
+
+        <EditText
+            android:id="@+id/textField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0.60"
+            android:background="@drawable/vivocha_edit_text_border"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#517A8F"
+            android:minWidth="70dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

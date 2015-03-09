@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/up_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:rotation="180"
+            android:orientation="horizontal" />
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/up_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+                        android:rotation="180"
+           
+            android:orientation="horizontal" />
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/up_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+                        android:rotation="180"
+            
+            android:orientation="horizontal" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/left_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/right_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/left_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/right_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/left_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/right_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </TableRow>
+
+    <TableRow
+       
+        android:layout_gravity="bottom"
+        android:layout_weight="1" >
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/down_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="bottom|center|left"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/down_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal"
+           />
+
+        <com.vivocha.sdk.othersource.RotableText
+            android:id="@+id/down_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right|bottom"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </TableRow>
+
+</TableLayout>

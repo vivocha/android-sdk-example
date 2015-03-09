@@ -8,6 +8,15 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
 
+    <!-- Vivocha SDK Permissions Start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.intent.RECEIVE" />
+    <!-- Vivocha SDK Permissions End -->
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,6 +35,30 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
+        <activity
+            android:name="com.vivocha.sdk.internal.VivochaChatActivity"
+            android:theme="@style/VivochaChatTheme" >
+        </activity>
+        
+        <!-- Vivocha SDK Push Additions Start -->
+        <receiver
+            android:name="com.vivocha.sdk.push.VivochaNotificationBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.vivocha.sdk.push" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.vivocha.sdk.push.VivochaPushService" />
+        <!-- Vivocha SDK Push Additions End -->
+
+        
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
     </application>
 
 </manifest>

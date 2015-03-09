@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.vivocha.sdk.Vivocha;
+
 public class MainActivity extends ActionBarActivity {
 
 	@Override
@@ -16,6 +18,10 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		
+		//Vivocha Start
+        Vivocha.start(this, "YOUR_ACCOUNT_ID", "YOUR_SERVICE_ID");
+
 		Button openDetailButton =  (Button) findViewById(R.id.buttonDetail);
 		openDetailButton.setOnClickListener(new OnClickListener() {
 			
