@@ -18,5 +18,31 @@
         android:gravity="center"
         android:layout_marginTop="118dp"
         android:text="Hey There! \nThis is the detail Activity" />
+
+     <Button
+         android:id="@+id/buttonWeblead"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:text="Create a weblead" />
+
+     <Button
+         android:id="@+id/customEngagement"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="16dp"
+         android:text="Custom Engagement" />
+
+     <Button
+         android:id="@+id/buttonCBN"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="85dp"
+         android:text="Create a CBN" />
     
 </RelativeLayout>
