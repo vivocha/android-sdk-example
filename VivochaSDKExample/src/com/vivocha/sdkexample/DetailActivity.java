@@ -106,6 +106,8 @@ public class DetailActivity extends ActionBarActivity {
 		}
 	}
 
+	
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -123,5 +125,21 @@ public class DetailActivity extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	protected void onPostResume() {
+		super.onPostResume();
+		
+		//Call this method when you show your own custom engagement button in order to track the widget on the Stats.
+		Vivocha.manager().notifyCustomEngagementButtonShown();
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		
+		//Call this method when you hide your own custom engagement button in order to track the widget on the Stats.
+		Vivocha.manager().notifyCustomEngagementButtonHidden();
 	}
 }
