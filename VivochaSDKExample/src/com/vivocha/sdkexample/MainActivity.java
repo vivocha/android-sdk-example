@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
         Vivocha.start(this, "YOUR_ACCOUNT_ID", "YOUR_SERVICE_ID");
 
         //if you want to use your custom engagement button uncomment the following line
-        Vivocha.setBlockSideButton(true); //this line disables the automatic side tab
+        //Vivocha.setBlockSideButton(true); //this line disables the automatic side tab
         
         
         //During a contact you can send an action from the Agent Desktop
